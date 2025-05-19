@@ -1,0 +1,22 @@
+footer {
+  background-color: var(--c-0);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  gap: 30px;
+}
+
+footer p {
+  color: var(--c-p3);
+  font: 500 1.2rem/1 "arial";
+}
+footer p span {
+  color: var(--c-p2);
+}
+
+footer img {
+  width: 200px;
+}

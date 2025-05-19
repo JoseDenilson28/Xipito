@@ -1,0 +1,122 @@
+.login-cont {
+  background: url("../img/doc\ \(3\).png") no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.login-itens {
+  border: solid 5px var(--c-p3);
+  padding: 30px;
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.login-itens h1 {
+  color: var(--c-p0);
+  font: 500 2.5rem/1 "arial";
+  margin-bottom: 30px;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.login-itens img {
+  width: 100px;
+  height: 100px;
+  top: -60px;
+  left: 0px;
+  position: absolute;
+}
+
+.login-form {
+  display: grid;
+  gap: 10px;
+  align-items: center;
+}
+
+.form-itens {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 20px;
+  margin-bottom: 50px;
+  align-items: center;
+}
+
+.form-itens input {
+  padding: 15px;
+  border: none;
+  border: 3px solid var(--c-p3);
+  font-size: 1.1rem;
+  color: var(--c-p1);
+  outline: none;
+}
+.form-itens input::placeholder {
+  color: var(--c-p1);
+}
+.form-itens button {
+  font: 600 1.2rem/1 "arial";
+}
+
+.form-itens label {
+  border: 3px solid var(--c-p3);
+  color: var(--c-p2);
+  padding: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form-itens label:hover {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.247);
+  color: var(--c-f);
+  background: var(--c-p3);
+}
+
+.login-itens a {
+  font: 600 1.2rem/1 "arial";
+  transition: 0.3s;
+  color: var(--c-p2);
+}
+.login-itens a:hover {
+  color: var(--c-p3);
+}
+.login-itens a:hover::after {
+  width: 30%;
+  border-color: var(--c-p2);
+}
+
+.login-itens a::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 4px;
+  border: solid 2px var(--c-p3);
+  margin-top: 5px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.voltar-index {
+  padding: 10px 20px;
+  border: 3px solid var(--c-p3);
+  text-transform: uppercase;
+  color: var(--c-p1);
+  position: fixed;
+  z-index: 99;
+  top: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.247);
+  left: 5px;
+  transform: scale(1);
+  transition: 0.3s;
+}
+
+.voltar-index:hover {
+  transform: scale(0.8);
+  background-color: var(--c-p2);
+  color: var(--c-f);
+  border-color: var(--c-p2);
+}

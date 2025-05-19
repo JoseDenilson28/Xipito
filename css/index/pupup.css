@@ -1,0 +1,193 @@
+#consulta-marcar {
+  background: rgba(0, 0, 0, 0.664);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999999999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+  transform: scale(0);
+}
+#consulta-marcar.pupup-show {
+  transform: scale(1);
+}
+
+#consulta-marcar input[type="radio"] {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+#fecharPopUp {
+  position: fixed;
+  top: 10%;
+  left: 0;
+  cursor: pointer;
+  font: 400 1.2rem/1 "arial";
+}
+
+.marcar-consulta {
+  background: linear-gradient(45deg, var(--c-f) 50%, var(--c-p3) 50%);
+  padding: 10px;
+  height: 70%;
+  width: 90%;
+  overflow: scroll;
+  max-width: 1000px;
+  max-height: 1000px;
+}
+
+.marcar-consulta::-webkit-scrollbar {
+  transition: 0.3s;
+  width: 15px;
+}
+
+.marcar-consulta::-webkit-scrollbar-track {
+  background: rgba(102, 102, 102, 0.26);
+}
+
+.marcar-consulta::-webkit-scrollbar-thumb {
+  background: var(--c-p2);
+}
+
+.marcar-consulta::-webkit-scrollbar-thumb:hover {
+  background: var(--c-p0);
+}
+
+.marcar-consulta form {
+  background-color: var(--c-f);
+  display: grid;
+  gap: 10px;
+  padding: 20px;
+}
+
+.dados-consulta {
+  display: grid;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.dados-consulta::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 5px;
+  background-color: var(--c-p3);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.dados-consulta h2 {
+  font: 500 2rem/1 "arial";
+  margin-bottom: 10px;
+  color: var(--c-p1);
+}
+
+.form-consulta {
+  display: grid;
+  gap: 5px;
+}
+
+.form-consulta + .form-consulta {
+  margin-top: 10px;
+}
+
+.form-consulta input {
+  border: 3px solid var(--c-p4);
+}
+.form-consulta select {
+  border: 3px solid var(--c-p4);
+  padding: 10px;
+  font: 500 1.1rem/1 "arial";
+}
+.dados-consulta textarea {
+  border: 3px solid var(--c-p4);
+}
+
+.form-consulta label {
+  font: 500 1.2rem/1 "arial";
+  color: var(--c-7);
+}
+.form-consulta h3 {
+  font: 500 1.2rem/1 "arial";
+  color: var(--c-7);
+}
+
+.form-consulta .radio {
+  padding: 10px;
+  color: var(--c-p1);
+  justify-self: left;
+  width: 250px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: 0.3s;
+  background-color: var(--c-p4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form-consulta .radio:hover {
+  background: var(--c-p3);
+}
+.form-consulta .radio::after {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 3px solid var(--c-p3);
+}
+
+.form-consulta .radio:hover::after {
+  border-color: var(--c-p4);
+}
+
+#consulta-marcar input[type="radio"]:checked + label::after {
+  border-color: var(--c-p4);
+  box-shadow: inset 2px 2px 0 var(--c-p4), inset -2px -2px 0 var(--c-p4);
+}
+
+#masculino:checked + label {
+  color: var(--c-p4);
+  background: var(--c-p1);
+}
+#feminino:checked + label {
+  color: var(--c-p4);
+  background: var(--c-p1);
+}
+#outro:checked + label {
+  color: var(--c-p4);
+  background: var(--c-p1);
+}
+#leve:checked + label {
+  color: var(--c-p4);
+  background: var(--c-p1);
+}
+#moderado:checked + label {
+  color: var(--c-p4);
+  background: var(--c-p1);
+}
+#intenso:checked + label {
+  color: var(--c-p4);
+  background: var(--c-p1);
+}
+#cirurgia-sim:checked + label {
+  color: var(--c-p4);
+  background: var(--c-p1);
+}
+#cirurgia-nao:checked + label {
+  color: var(--c-p4);
+  background: var(--c-p1);
+}
+
+.dados-consulta.ultimo {
+  background-color: var(--c-p3);
+  padding: 20px;
+}
+.dados-consulta.ultimo label {
+  font: 400 1rem/1.3 "arial";
+  color: var(--c-f);
+}

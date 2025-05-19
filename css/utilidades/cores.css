@@ -1,0 +1,127 @@
+#corpoPagina:root {
+  /*----------------paleta-cores-para-todas-pagonas--------------------*/
+
+  --c-alertR: rgb(247, 10, 89);
+  --c-alertO: rgb(247, 105, 10);
+  --c-alertY: rgb(247, 192, 10);
+  --c-alertG: rgb(13, 224, 30);
+  --c-alertB: rgb(10, 247, 208);
+
+  --c-alertR-opacity: rgba(247, 10, 89, 0.185);
+  --c-alertO-opacity: rgba(247, 105, 10, 0.185);
+  --c-alertY-opacity: rgba(247, 192, 10, 0.185);
+  --c-alertG-opacity: rgba(10, 247, 30, 0.185);
+  --c-alertB-opacity: rgba(10, 247, 208, 0.185);
+
+  --c-f: #fff;
+  --c-0: #001f33;
+  --c-1: #e5f0f8;
+  --c-1-0: #d1dfe9;
+  --c-2: #adc2d1;
+  --c-3: #7690a3;
+  --c-4: #4e6a7e;
+  --c-5: #2f485a;
+  --c-6: #1c3649;
+
+  --c-p4: #e4e6da;
+  --c-p3: #c2cfb4;
+  --c-p2: #8aa88a;
+  --c-p1: #48654e;
+  --c-p0: #48654e;
+}
+
+:root {
+  /*paleta de cores*/
+
+  --c-alertR: rgb(247, 10, 89);
+  --c-alertO: rgb(247, 105, 10);
+  --c-alertY: rgb(247, 192, 10);
+  --c-alertG: rgb(13, 224, 30);
+  --c-alertB: rgb(10, 247, 208);
+
+  --c-alertR-opacity: rgba(247, 10, 89, 0.185);
+  --c-alertO-opacity: rgba(247, 105, 10, 0.185);
+  --c-alertY-opacity: rgba(247, 192, 10, 0.185);
+  --c-alertG-opacity: rgba(10, 247, 30, 0.185);
+  --c-alertB-opacity: rgba(10, 247, 208, 0.185);
+
+  --c-f: #fff;
+  --c-0: #343534;
+  --c-1: #eee;
+  --c-2: #ddd;
+  --c-3: #ccc;
+  --c-4: #999;
+  --c-5: #888;
+  --c-6: #777;
+  --c-7: #666;
+
+  --c-p4: #e4e6da;
+  --c-p3: #c2cfb4;
+  --c-p2: #8aa88a;
+  --c-p1: #48654e;
+  --c-p0: #48654e;
+}
+
+/*classes de cores*/
+.c-alertR {
+  color: rgb(247, 10, 89) !important;
+}
+.c-alertO {
+  color: rgb(247, 105, 10) !important;
+}
+.c-alertY {
+  color: rgb(247, 192, 10) !important;
+}
+.c-alertG {
+  color: rgb(10, 247, 30) !important;
+}
+.c-alertB {
+  color: rgb(10, 247, 208) !important;
+}
+
+.c-p0 {
+  color: var(--c-p0);
+}
+.c-p1 {
+  color: var(--c-p1);
+}
+.c-p2 {
+  color: var(--c-p2);
+}
+.c-p3 {
+  color: var(--c-p3);
+}
+.c-p4 {
+  color: var(--c-p4);
+}
+
+.c-0 {
+  color: var(--c-0);
+}
+.c-f {
+  color: var(--c-f);
+}
+.c-1 {
+  color: var(--c-1);
+}
+.c-2 {
+  color: var(--c-2);
+}
+.c-3 {
+  color: var(--c-3);
+}
+.c-4 {
+  color: var(--c-4);
+}
+.c-5 {
+  color: var(--c-5);
+}
+.c-6 {
+  color: var(--c-6);
+}
+.c-7 {
+  color: var(--c-7);
+}
+.c-8 {
+  color: var(--c-8);
+}

@@ -1,0 +1,60 @@
+#header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: var(--c-p3);
+  z-index: 99999;
+}
+
+.header-bg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 10px;
+  gap: 10px;
+}
+
+#form-pesquisa {
+  display: flex;
+  align-items: center;
+  /*background-color: var(--c-p4);*/
+  border: 3px solid var(--c-p4);
+  padding: 5px 10px;
+  width: 80%;
+  gap: 5px;
+}
+#form-pesquisa input {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  width: 100%;
+  outline: none;
+  color: var(--c-p1);
+}
+
+#form-pesquisa label {
+  color: var(--c-p2);
+  cursor: pointer;
+}
+
+.header-menu {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.header-menu a {
+  padding: 5px;
+  color: var(--c-p1);
+  transition: 0.4s;
+  border: 3px solid var(--c-p0);
+  padding: 10px 20px;
+  text-transform: uppercase;
+}
+.header-menu a:hover {
+  border-color: var(--c-p1);
+  background-color: var(--c-p1);
+  box-shadow: 0px 2px 5px var(--c-7);
+  color: var(--c-p4);
+}

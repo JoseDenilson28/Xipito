@@ -1,0 +1,53 @@
+.back-bg {
+  background: url("../../img/doc\ \(1\).png") no-repeat;
+  background-size: cover;
+  height: 650px;
+  display: flex;
+}
+
+#header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(127, 136, 132, 0.575);
+  z-index: 99999;
+}
+
+.header-bg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0px 10px;
+}
+
+.header-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  color: var(--c-p3);
+}
+
+.header-menu a {
+  padding: 10px;
+
+  transition: 0.4s;
+}
+.header-menu a:hover {
+  color: var(--c-p2);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.171);
+}
+
+.header-menu .login {
+  border: 3px solid var(--c-p0);
+  padding: 10px 20px;
+  text-transform: uppercase;
+  box-shadow: 0px 2px 5px var(--c-7);
+}
+.header-menu .login:hover {
+  border-color: var(--c-p1);
+  background-color: var(--c-p1);
+  color: var(--c-p4);
+}
