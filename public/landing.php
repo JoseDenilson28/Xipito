@@ -10,6 +10,14 @@
       href="assets/icons/xipindo11.png"
       type="image/x-icon"
     />
+    <style>
+      .swal2-container {
+        z-index: 99999 !important;
+      }
+    </style>
+    <script src="assets/js/anamnese.js" defer></script>
+    <script src="assets/js/landing.js"></script>
+    <script src="assets/js/sweetalert2.min.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xipito</title>
   </head>
@@ -32,12 +40,12 @@
       </header>
 
       <main class="main box-min">
-        <h1>nos cuidamos de você e sua saúde</h1>
+        <h1>Nos cuidamos de você e sua saúde</h1>
         <p>
           Oferecemos serviços especializados com os melhores profissionais em
           diversas áreas de saúde.
         </p>
-        <a class="botao" id="consulta">marcar consulta</a>
+        <button class="botao" id="consulta">marcar consulta</button>
       </main>
     </div>
 
@@ -362,7 +370,7 @@
     <section id="consulta-marcar">
       <span id="fecharPopUp" class="botao-d">X</span>
       <div class="marcar-consulta">
-        <form action="">
+        <form id="form-anamnese" method="POST">
           <div class="dados-consulta primeiro">
             <h2> Dados Pessoais</h2>
       
@@ -456,120 +464,5 @@
         </form>
       </div>
     </section>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const linksInternos = document.querySelectorAll('a[href^="#"]');
-
-        linksInternos.forEach((link) => {
-          link.addEventListener("click", function (event) {
-            event.preventDefault();
-
-            const destino = document.querySelector(this.getAttribute("href"));
-
-            if (destino) {
-              const topo = destino.offsetTop;
-              window.scrollTo({
-                top: topo,
-                behavior: "smooth",
-              });
-            }
-          });
-        });
-      });
-    </script>
-
-    <script>
-      function adicionarClasse(elementId, contactClass) {
-        // Remove a classe "local" de todos os elementos
-        let elementos = document.querySelectorAll(".servicos-list li");
-        elementos.forEach((elemento) => {
-          elemento.classList.remove("local");
-        });
-
-        // Adiciona a classe "local" ao elemento clicado
-        document.getElementById(elementId).classList.add("local");
-
-        // Adiciona a classe "showSeguindo" ou "showSeguidores" ao elemento "#servicosMenu"
-        let servicosMenu = document.getElementById("servicos-fornecidos");
-        servicosMenu.classList.remove(
-          "showExames",
-          "showConsultas",
-          "showOpiniao"
-        ); // Remove ambas as classes
-        servicosMenu.classList.add(contactClass); // Adiciona a classe necessária
-      }
-    </script>
-
-    <script>
-      const slides = document.querySelector(".slides");
-      const prevButton = document.getElementById("prev");
-      const nextButton = document.getElementById("next");
-      const dots = document.querySelectorAll(".departamento-menu li");
-      let currentIndex = 0;
-
-      function showSlide(index) {
-        slides.style.transform = `translateX(-${index * 100}%)`;
-        currentIndex = index;
-        updateDots();
-      }
-
-      function updateDots() {
-        dots.forEach((dot, index) => {
-          if (index === currentIndex) {
-            dot.classList.add("active");
-          } else {
-            dot.classList.remove("active");
-          }
-        });
-      }
-
-      prevButton.addEventListener("click", () => {
-        if (currentIndex > 0) {
-          showSlide(currentIndex - 1);
-        } else {
-          showSlide(slides.children.length - 1);
-        }
-      });
-
-      nextButton.addEventListener("click", () => {
-        if (currentIndex < slides.children.length - 1) {
-          showSlide(currentIndex + 1);
-        } else {
-          showSlide(0);
-        }
-      });
-
-      dots.forEach((dot, index) => {
-        dot.addEventListener("click", () => {
-          showSlide(index);
-        });
-      });
-
-      // Slide automático
-      setInterval(() => {
-        if (currentIndex < slides.children.length - 1) {
-          showSlide(currentIndex + 1);
-        } else {
-          showSlide(0);
-        }
-      }, 7000); // Troca de slide a cada 3 segundos
-    </script>
-
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const todosObjectivo = document.getElementById("consulta");
-        const fechar = document.querySelector("#fecharPopUp");
-        const bodyPopUp = document.getElementById("consulta-marcar");
-
-        todosObjectivo.addEventListener("click", function () {
-            bodyPopUp.classList.add("pupup-show");
-        });
-
-        fechar.addEventListener("click", function () {
-            bodyPopUp.classList.remove("pupup-show");
-        });
-      });
-    </script>
   </body>
 </html>
