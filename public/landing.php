@@ -25,7 +25,7 @@
               <li><a href="#departamentos">departamentos</a></li>
               <li><a href="#doctores">doctores</a></li>
               <li><a href="#contacto">contactos</a></li>
-              <li><a  href="../app/views/auth/auth.php"class="login">login</a></li>
+              <li><a  href="../app/views/auth/login.php"class="login">login</a></li>
             </ul>
           </nav>
         </div>

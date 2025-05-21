@@ -9,17 +9,17 @@
       href="../../../public/assets/icons/xipindo11.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="../../../public/assets/css/auth.css">
+    <link rel="stylesheet" href="../../../public/assets/css/views/auth.css">
     <title>login</title>
   </head>
 
   <body id="body">
     <main class="login-cont">
-      <a class="voltar-index" href="../../../public/index.php">voltar</a>
+      <a class="voltar-index" href="../../../public/landing.php">voltar</a>
       <div class="login-itens">
         <img src="../../../public/assets/icons/xipindo11.png" alt="logo" />
         <h1>login de usuário</h1>
-        <form action="../home/home.php" class="login-form">
+        <form action="../home/index.php" class="login-form">
           <div class="form-itens">
             <label for="nome">
               <svg
