@@ -3,11 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="stylesheet" href="../css/global/header-home.css" />
+    <link rel="stylesheet" href="../../../public/assets/css/style.css" />
+    <link rel="stylesheet" href="../../../public/assets/css/global/header-home.css" />
+    <link rel="stylesheet" href="../../../public/assets/css/global/header-home.css" />
     <link
       rel="shortcut icon"
-      href="../icons/xipindo11.png"
+      href="../../../public/assets/icons/xipindo11.png"
       type="image/x-icon"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,7 +18,7 @@
     <header id="header">
       <div class="header-bg box-max">
         <a href="#body"
-          ><img src="../icons/xipindo11.png" alt="logo" class="logo-X"
+          ><img src="../../../public/assets/icons/xipindo11.png" alt="logo" class="logo-X"
         /></a>
 
         <form id="form-pesquisa" action="">
