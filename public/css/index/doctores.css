@@ -1,0 +1,133 @@
+#doctores {
+  margin-top: 60px;
+  background-color: var(--c-p3);
+}
+
+#doctores h1 {
+  text-align: center;
+  color: var(--c-f);
+  font: 500 2.5rem/1.2 "arial";
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+#doctores h1 p {
+  text-align: center;
+  color: var(--c-p0);
+  font: 500 1.1rem/1.2 "arial";
+}
+
+.doctores {
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 40px 20px;
+}
+
+.doctores-list .doctore-li {
+  perspective: 900px;
+}
+
+.doctoreId {
+  transition: all 1s cubic-bezier(0.7, -0.5, 0.3, 1.8);
+  transform-style: preserve-3d;
+}
+.doctores-list .doctore-li:hover .doctoreId {
+  transform: rotateY(180deg) translateX(-20px);
+}
+
+.doctores-list .fornt,
+.back {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  padding: 10px;
+  top: 0px;
+  left: 0px;
+  box-shadow: 3px 3px 10px var(--c-p1);
+  border-radius: 5px;
+  backface-visibility: hidden;
+}
+
+.doctores-list .fornt {
+  cursor: pointer;
+  height: 100%;
+  backface-visibility: hidden;
+  background-size: cover;
+  background-position: center center;
+  padding: 10px;
+  border: 3px solid var(--c-p4);
+}
+
+.doctores-list .back {
+  transform: rotateY(180deg);
+  height: 100%;
+  background-color: var(--c-p2);
+  position: absolute;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  overflow-y: hidden;
+}
+
+.doctores-list .fornt img {
+  margin-bottom: 10px;
+}
+.doctores-list .fornt h2 {
+  font: 500 1.8rem/1.2 "arial";
+  color: var(--c-f);
+  display: grid;
+}
+.doctores-list .fornt span {
+  font: 500 1.2rem/1.2 "arial";
+  color: var(--c-p0);
+  display: grid;
+}
+
+.doctores-list .back picture {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.doctores-list .back img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.doctores-list .back h2 {
+  font: 600 1.8rem/1.2 "arial";
+  color: var(--c-f);
+  display: grid;
+}
+.doctores-list .back span {
+  font: 500 1.2rem/1.2 "arial";
+  color: var(--c-p0);
+  display: grid;
+}
+
+.doctores-list .back h3 {
+  font: 600 1.8rem/1.2 "arial";
+  color: var(--c-f);
+  display: grid;
+  text-transform: uppercase;
+}
+.doctores-list .back h3 p {
+  font: 500 1.1rem/1.2 "arial";
+  color: var(--c-p0);
+  max-width: 30pc;
+  text-transform: initial;
+  margin-top: 10px;
+}
+
+.doctores-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.doctore-li {
+  flex: 1;
+  min-width: 200px;
+}
+.doctore-li + .doctore-li {
+  margin-left: 20px;
+}

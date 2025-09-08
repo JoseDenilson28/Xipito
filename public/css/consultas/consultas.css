@@ -1,0 +1,232 @@
+.consultas {
+  padding: 10px;
+  margin-top: 50px;
+}
+
+.consultas h1 {
+  font: 500 2rem/1 "arial";
+  color: var(--c-p2);
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.consultas-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border: 2px solid var(--c-p3);
+  gap: 10px;
+  min-width: 200px;
+}
+
+.consultas-person {
+  padding: 15px 10px;
+  flex-grow: 1;
+  background-color: var(--c-p2);
+}
+.consultas-person.off {
+  background-color: var(--c-p3);
+}
+.consultas-person.on {
+  box-shadow: 0px 2px 3px rgb(151, 150, 150);
+}
+
+.consultas-person .person {
+  display: grid;
+  gap: 7px;
+}
+.consultas-person .person li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  font: 500 1rem/1 "arial";
+  text-transform: capitalize;
+  border: 2px solid var(--c-p3);
+  color: var(--c-p4);
+}
+.consultas-person.off .person li {
+  border: 2px solid var(--c-p2);
+  color: var(--c-p2);
+}
+.consultas-person .person li span {
+  color: var(--c-p0);
+}
+.consultas-person .person li:nth-child(4) span {
+  background-color: rgba(172, 255, 47, 0.548);
+  padding: 3px;
+}
+.consultas-person.off .person li:nth-child(4) span {
+  background-color: rgba(248, 229, 53, 0.527);
+}
+.consultas-person .person .botoes {
+  border: none;
+  padding: 0;
+  color: var(--c-f);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+.consultas-person.off .person .botoes {
+  border: none;
+  color: var(--c-f);
+}
+
+.consultas-person .person .botoes button {
+  padding: 10px;
+  text-transform: uppercase;
+  flex-grow: 1;
+}
+
+.ver-detalhe {
+  background-color: rgba(248, 229, 53, 0.527);
+  transition: 0.3s;
+}
+.finaliza {
+  transition: 0.3s;
+  background-color: rgba(172, 255, 47, 0.548);
+}
+
+.ver-detalhe:hover {
+  background-color: rgba(189, 172, 24, 0.699);
+}
+.finaliza:hover {
+  background-color: rgba(145, 219, 33, 0.712);
+}
+
+.on .finaliza {
+  transition: 0.3s;
+  background-color: rgba(172, 255, 47, 0.171);
+  cursor: auto;
+  color: var(--c-2);
+}
+
+.detalhes-cont {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.384);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: 0.4s;
+}
+.detalhes-cont.show {
+  transform: scale(1);
+}
+
+.detalhes {
+  background-color: var(--c-f);
+  padding: 20px;
+  display: grid;
+  gap: 10px;
+  max-width: 500px;
+  width: 80%;
+  min-height: 400px;
+  max-height: 800px;
+  height: 70%;
+  overflow-x: auto;
+  min-width: 200px;
+  position: relative;
+}
+
+.DcOff .detalhes::before {
+  content: "finalizar consulta";
+  color: var(--c-5);
+  display: block;
+  font: 500 1.5rem/1 "arial";
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+.DcON .detalhes::before {
+  content: "detalhes da consulta";
+  color: var(--c-5);
+  display: block;
+  font: 500 1.5rem/1 "arial";
+  position: absolute;
+  top: 30px;
+  left: 20px;
+}
+
+.detalhes::-webkit-scrollbar {
+  display: none;
+}
+
+.DadosPessoais {
+  display: grid;
+  gap: 10px;
+  border: 3px solid var(--c-p2);
+  padding: 5px;
+}
+
+.DadosPessoais li {
+  font: 500 1rem/1 "arial";
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  background-color: var(--c-1);
+  color: var(--c-5);
+}
+.DadosPessoais li span {
+  color: var(--c-p2);
+}
+.DadosMedicos {
+  display: grid;
+  gap: 10px;
+  background-color: var(--c-p3);
+  padding: 5px;
+}
+.DadosMedicos p {
+  font: 500 1rem/1 "arial";
+  text-transform: capitalize;
+  color: var(--c-f);
+}
+.DadosMedicos p span {
+  font: 500 1rem/1 "arial";
+  text-transform: capitalize;
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  border: 3px solid var(--c-p4);
+  color: var(--c-p1);
+  margin-top: 3px;
+  display: grid;
+}
+
+.detalhes form {
+  display: grid;
+  gap: 5px;
+}
+.detalhes form label {
+  text-transform: capitalize;
+  font: 500 1rem/1 "arial";
+  color: var(--c-p2);
+}
+.detalhes form textarea,
+p {
+  padding: 5px;
+  font: 500 1.1rem/1 "arial";
+  color: var(--c-6);
+  margin-bottom: 10px;
+}
+
+.detalhes form button {
+  background-color: var(--c-p1);
+  pointer-events: none;
+}
+.detalhes .closed {
+  justify-self: end;
+  align-self: flex-start;
+  cursor: pointer;
+}

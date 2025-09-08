@@ -1,0 +1,152 @@
+#dashboard {
+  background-color: var(--c-p3);
+}
+
+.mather {
+  padding: 0px;
+  padding-right: 10px;
+  margin-left: 170px;
+}
+
+.header-second {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 10px 0;
+  margin-bottom: 60px;
+}
+
+.header-second form {
+  background-color: var(--c-p4);
+  width: 90%;
+}
+.header-second form input {
+  width: 100%;
+  outline: none;
+  font: 500 1.2rem/1 arial;
+}
+.header-second-menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-second-menu a {
+  padding: 5px 10px;
+  background-color: var(--c-p4);
+  color: var(--c-p1);
+}
+.header-second-menu img {
+  width: 50px;
+  height: 45px;
+  cursor: pointer;
+}
+/*-------------------------------*/
+
+.dash-board {
+  padding: 10px;
+  padding-left: 0;
+  display: grid;
+  gap: 20px;
+}
+
+.dash-board h1 {
+  font: 500 2.5rem/1 "arial";
+  color: var(--c-p0);
+  text-transform: capitalize;
+}
+
+.dash-board-list {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.dash-board-list li {
+  padding: 20px;
+  background-color: var(--c-p4);
+  flex: 1;
+  cursor: pointer;
+  text-align: center;
+  transform: scale(0.9);
+  transition: 0.3s;
+  display: grid;
+  gap: 5px;
+}
+.dash-board-list li:hover {
+  transform: scale(1);
+  z-index: 2;
+}
+
+.dash-board-list li h2 {
+  font: 500 1.5rem/1 "arial";
+  color: var(--c-p2);
+  text-transform: uppercase;
+}
+.dash-board-list li span {
+  font: 500 2rem/1 "arial";
+  color: var(--c-p0);
+  text-transform: uppercase;
+  background-color: var(--c-p3);
+  justify-self: center;
+  padding: 10px 20px;
+  margin-bottom: -35px;
+  box-shadow: 0 1px 5px var(--c-p2);
+}
+/*-------------------------------*/
+
+.tabela-dash {
+  margin-top: 50px;
+  margin-bottom: 10px;
+  width: 100%;
+  border-collapse: collapse;
+  flex: 1;
+}
+
+.tabela-dash thead th {
+  background-color: var(--c-p2);
+  padding: 5px;
+  border: 2px solid var(--c-p4);
+  font: 600 1.2rem/1 "arial";
+  color: var(--c-p1);
+}
+
+.tabela-dash tbody td {
+  border: 2px solid var(--c-1);
+  padding: 5px;
+  background-color: var(--c-p4);
+  font: 500 1rem/1 "arial";
+  color: var(--c-p1);
+}
+
+.tabela-dash tbody td button {
+  display: grid;
+  padding: 3px;
+  font: 600 1rem/1 "arial";
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.tabela-dash tbody td .remover {
+  background-color: rgba(219, 0, 0, 0.452);
+  color: var(--c-p0);
+  margin-top: 5px;
+  transition: 0.3s;
+}
+.tabela-dash tbody td .remover:hover {
+  background-color: rgba(151, 0, 0, 0.61);
+  color: var(--c-2);
+}
+.tabela-dash tbody td .editar {
+  background-color: rgba(0, 214, 221, 0.486);
+  transition: 0.3s;
+  color: var(--c-p0);
+}
+.tabela-dash tbody td .editar:hover {
+  background-color: rgba(0, 136, 141, 0.815);
+  color: var(--c-2);
+}

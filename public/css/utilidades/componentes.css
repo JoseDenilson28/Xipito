@@ -1,0 +1,84 @@
+/*--------------------------conteiners-dimenções---------------------*/
+.box-max {
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 2000px;
+  padding: 10px;
+}
+
+.box {
+  margin: 0 auto;
+  box-sizing: border-box;
+  max-width: 1000px;
+  min-width: 200px;
+  padding: 10px;
+  width: 100%;
+}
+.box-min {
+  margin: 0 auto;
+  max-width: 500px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.botao {
+  color: var(--c-p3);
+  border: 3px solid var(--c-p0);
+  padding: 10px 20px;
+  text-transform: uppercase;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.24);
+  transition: 0.4s;
+}
+.botao:hover {
+  border-color: var(--c-p1);
+  background-color: var(--c-p1);
+  color: var(--c-p4);
+}
+.botao-d {
+  color: var(--c-p3);
+  border: 3px solid var(--c-p4);
+  padding: 10px 20px;
+  text-transform: uppercase;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.281);
+  transition: 0.4s;
+}
+.botao-d:hover {
+  border-color: var(--c-p1);
+  background-color: var(--c-p1);
+  color: var(--c-f);
+}
+
+.botao-s {
+  color: var(--c-p1);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.24);
+  background: var(--c-p);
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  transition: 0.4s;
+}
+.botao-s:hover {
+  background: var(--c-p1);
+  color: var(--c-f);
+}
+/*
+
+  Estilizando a barra de rolagem 
+  ::-webkit-scrollbar {
+    width: 10px; largura da barra de rolagem 
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; cor de fundo da pista da barra de rolagem 
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #888; cor do polegar da barra de rolagem 
+    border-radius: 5px; borda arredondada do polegar da barra de rolagem 
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; cor do polegar da barra de rolagem ao passar o mouse 
+  }
+
+*/

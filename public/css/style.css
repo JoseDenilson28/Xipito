@@ -1,0 +1,20 @@
+@import url("global/global.css");
+@import url("global/footer.css");
+
+@import url("utilidades/componentes.css");
+@import url("utilidades/cores.css");
+
+@import url("index/main.css");
+@import url("index/serviços.css");
+@import url("index/departamento.css");
+
+@import url("./doctor.css");
+
+@import url("./consultas/consultas.css");
+@import url("./consultas/main.css");
+
+@import url("index/doctores.css");
+@import url("index/contactos.css");
+@import url("index/pupup.css");
+
+@import url("views/main.css");

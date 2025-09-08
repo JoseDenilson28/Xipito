@@ -1,0 +1,84 @@
+* {
+  padding: 0;
+  margin: 0;
+  color: inherit;
+  color: currentColor;
+  font-family: Arial, Helvetica, sans-serif;
+  list-style: none;
+  text-decoration: none;
+  outline-color: var(--c-p);
+  background: transparent;
+}
+html {
+  background-color: var(--c-p4);
+}
+a {
+  display: inline-block;
+  cursor: pointer;
+}
+img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: top;
+}
+video {
+  width: 100%;
+  border-radius: 5px;
+}
+
+input {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--c-3);
+  font: 500 1rem/1 "arial";
+}
+textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: transparent;
+  font-size: 1rem;
+  resize: none;
+  color: var(--c-3);
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+input:focus {
+  outline-color: var(--c-p);
+}
+button {
+  border: none;
+  cursor: pointer;
+}
+svg {
+  width: 30px;
+  fill: currentColor !important;
+}
+
+.logo-X {
+  width: 100px;
+}
+
+body::-webkit-scrollbar {
+  transition: 0.3s;
+  width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(102, 102, 102, 0.26);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: var(--c-p2);
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: var(--c-p0);
+}

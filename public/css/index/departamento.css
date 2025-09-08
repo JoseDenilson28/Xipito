@@ -1,0 +1,152 @@
+#departamentos {
+  margin-top: 60px;
+  background: url("../../img/doc\ \(2\).png") no-repeat;
+  height: 420px;
+  background-size: cover;
+  background-position: center;
+}
+
+.departamento-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  margin-top: 20px;
+}
+.departamentoOver {
+  overflow: hidden;
+  position: relative;
+}
+
+.departamento {
+  display: flex;
+  transition: 0.7s;
+  height: 250px;
+}
+
+#departamentos h1 {
+  text-align: center;
+  font: 500 2.5rem/1.3 "arial";
+  color: var(--c-p0);
+  grid-column: 1/-1;
+}
+#departamentos h1 p {
+  text-align: center;
+  color: var(--c-p2);
+  font: 500 1rem/1 "arial";
+  margin-top: 10px;
+}
+
+#prev,
+#next {
+  left: 0;
+  pointer-events: none;
+  opacity: 0;
+  position: absolute;
+}
+
+.departamento-menu {
+  display: grid;
+  align-items: center;
+}
+.departamento-menu li {
+  background-color: var(--c-p2);
+  padding: 20px;
+  color: var(--c-p4);
+  text-align: center;
+  transition: 0.3s;
+  cursor: pointer;
+  margin-right: -10px;
+  position: relative;
+  text-transform: uppercase;
+}
+.departamento-menu li:hover {
+  color: var(--c-p1);
+  background-color: var(--c-p3);
+}
+.departamento-menu .active {
+  background-color: var(--c-p1);
+  color: var(--c-f);
+  z-index: 22;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.185);
+}
+.departamento-menu .active:hover {
+  background-color: var(--c-p1);
+  color: var(--c-f);
+}
+
+.slides {
+  display: flex;
+  transition: 0.7s ease;
+}
+
+.slide {
+  width: 100%;
+  flex-shrink: 0;
+  height: 250px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.departamento-text {
+  padding: 20px;
+  background-color: var(--c-p4);
+}
+
+.departamento-text h2 {
+  font: 500 2rem/1 "arial";
+  margin-bottom: 20px;
+  color: var(--c-p1);
+}
+.departamento-text p {
+  font: 500 1.1rem/1.3 "arial";
+  margin-bottom: 20px;
+  color: var(--c-p2);
+}
+.departamento-text a {
+  font: 600 1.1rem/1.3 "arial";
+  color: var(--c-p1);
+  border: 3px solid var(--c-p2);
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition: 0.3s;
+}
+.departamento-text a:hover {
+  color: var(--c-p4);
+  background-color: var(--c-p2);
+}
+.departamento .Cardiologia {
+  background-size: cover;
+  height: 100%;
+}
+.departamento .clinica {
+  background-size: cover;
+}
+.departamento .pediatria {
+  background-size: cover;
+}
+
+.departamento-servicos {
+  border: 3px solid var(--c-f);
+  padding: 20px;
+}
+
+.departamento-servicos h3 {
+  font: 500 2rem/1 "arial";
+  margin-bottom: 20px;
+  color: var(--c-p4);
+}
+.departamento-servicos li {
+  font: 500 1.2rem/1.3 "arial";
+  margin-bottom: 10px;
+  color: var(--c-3);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.departamento-servicos li::before {
+  content: "";
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: var(--c-p2);
+}

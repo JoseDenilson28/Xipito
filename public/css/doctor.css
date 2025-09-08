@@ -1,0 +1,129 @@
+.perfil-header-bg {
+  background-color: var(--c-p3);
+  padding: 10px;
+  box-shadow: inset 180px 0px 0 var(--c-p4);
+  padding-top: 40px;
+  margin-top: 90px;
+}
+.perfil-header {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  gap: 20px;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+.perfil-header picture {
+  width: 250px;
+  box-shadow: 0 2px 5px #5c5c5c63;
+}
+
+.perfil-header-text {
+  padding: 10px;
+  text-align: left;
+}
+.perfil-header-text h1 {
+  font: 500 2rem/0.9 "arial";
+  color: var(--c-p0);
+  display: grid;
+  text-transform: capitalize;
+}
+.perfil-header-text p {
+  font: 500 1rem/1 "arial";
+  color: var(--c-7);
+}
+
+.perfil-header-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  gap: 10px;
+  align-self: flex-start;
+  padding: 10px 0;
+}
+
+.perfil-header-list::before {
+  content: "actividades";
+  display: grid;
+  grid-column: 1/-1;
+  font: 500 2rem/1 "arial";
+  color: var(--c-p0);
+  text-transform: capitalize;
+}
+
+.perfil-header-list li {
+  padding: 10px;
+  background-color: var(--c-p2);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font: 500 1.3rem/1 "arial";
+  color: var(--c-f);
+  align-items: center;
+  justify-content: center;
+}
+.perfil-header-list li span {
+  font: 500 1rem/1 "arial";
+  color: var(--c-p0);
+}
+
+/*****************************/
+.informacoes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  max-width: 1000px;
+  padding: 10px;
+  padding-top: 60px;
+}
+.informacoes h1 {
+  font: 500 2.4rem/1 "arial";
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.informacoes-pessoais {
+  background-color: var(--c-p2);
+  padding: 20px;
+}
+.informacoes-tecnicas {
+  padding: 20px;
+  border: 2px solid var(--c-p2);
+}
+.informacoes-pessoais h1 {
+  color: var(--c-p4);
+}
+.informacoes-tecnicas h1 {
+  color: var(--c-p0);
+}
+.informacoes ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 5px;
+  align-items: start;
+}
+
+.informacoes ul li {
+  display: grid;
+  font: 500 1.2rem/1 "arial";
+  text-transform: uppercase;
+  color: var(--c-p4);
+  padding: 5px;
+}
+
+.informacoes-tecnicas ul li {
+  color: var(--c-p2);
+}
+
+.informacoes ul li span {
+  font: 600 1.2rem/1 "arial";
+  color: var(--c-p0);
+  border: 2px solid var(--c-p3);
+  padding: 10px;
+  text-transform: capitalize;
+  display: grid;
+  margin-top: 5px;
+}
+.informacoes-tecnicas ul li span {
+  color: var(--c-5);
+  border: 2px solid var(--c-p3);
+}

@@ -1,0 +1,86 @@
+.painel-consulta {
+  background-color: var(--c-f);
+  display: flex;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  padding: 20px;
+  margin-top: 120px;
+}
+
+.painel-consulta h1 {
+  font: 500 1.5rem/1 "arial";
+  max-width: 10pc;
+  text-align: left;
+  color: var(--c-p1);
+  text-transform: capitalize;
+}
+
+.painel-consulta ul {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  gap: 10px;
+}
+.painel-consulta ul li:hover {
+  border: transparent;
+  background-color: var(--c-p3);
+  color: var(--c-p4);
+}
+.painel-consulta ul li {
+  flex-grow: 1;
+  padding: 10px;
+  display: flex;
+  font: 500 1rem/1 "arial";
+  justify-content: center;
+  color: var(--c-p3);
+  cursor: pointer;
+  transform: scale(0.9);
+  transition: 0.3s;
+}
+
+.painel-consulta ul .active:hover {
+  background-color: var(--c-p1);
+}
+.painel-consulta ul .active {
+  border: transparent;
+  background-color: var(--c-p1);
+  color: var(--c-p4);
+  transform: scale(1);
+  box-shadow: 0 3px 4px #8080806e;
+}
+
+.consultas-person.off {
+  transition: 0.3s;
+}
+.consultas-person.on {
+  transition: 0.3s;
+}
+
+.Showrealizadas .consultas-person.off {
+  position: absolute;
+  opacity: 0;
+}
+.Showrealizadas .consultas-person.on {
+  position: initial;
+  opacity: 1;
+}
+
+.Showandamento .consultas-person.off {
+  position: initial;
+  opacity: 1;
+}
+.Showandamento .consultas-person.on {
+  position: absolute;
+  opacity: 0;
+}
+
+.Showtodas .consultas-person.on {
+  position: initial;
+  opacity: 1;
+}
+.Showtodas .consultas-person.off {
+  opacity: 1;
+  position: initial;
+}
