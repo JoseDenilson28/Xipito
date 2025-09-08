@@ -3,22 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../../public/css/style.css" />
+    <link rel="stylesheet" href="../public/css/style.css" />
     <link
       rel="shortcut icon"
-      href="../../../public/icons/xipindo11.png"
+      href="../public/icons/xipindo11.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="../../../public/css/views/auth.css" />
-    <title>cadastro Admin</title>
+    <link rel="stylesheet" href="../public/css/views/auth.css" />
+    <title>Cadastro Douctor</title>
   </head>
 
   <body id="cadastro">
     <main class="login-cont">
       <a class="voltar-index" href="javascript:history.back()">voltar</a>
       <div class="login-itens">
-        <img src="../../../public/icons/xipindo11.png" alt="logo" />
-        <h1>cadastro de Admin</h1>
+        <img src="../public/icons/xipindo11.png" alt="logo" />
+        <h1>Cadastro de Douctor</h1>
         <form action="../home/index.php" class="login-form">
           <div class="form-itens">
             <input type="text" id="nome" name="nome" placeholder="seu nome" />
@@ -58,7 +58,6 @@
             <button id="button" name="button" class="botao">cadastrar</button>
           </div>
         </form>
-        <a href="">já tenho uma conta</a>
       </div>
     </main>
   </body>

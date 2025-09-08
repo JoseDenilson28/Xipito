@@ -3,22 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../../public/css/style.css" />
+    <link rel="stylesheet" href="../public/css/style.css" />
     <link
       rel="shortcut icon"
-      href="../../../public/icons/xipindo11.png"
+      href="../public/icons/xipindo11.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="../../../public/css/views/auth.css" />
-    <title>cadastro</title>
+    <link rel="stylesheet" href="../public/css/views/auth.css" />
+    <title>Cadastro Admin</title>
   </head>
 
   <body id="cadastro">
     <main class="login-cont">
       <a class="voltar-index" href="javascript:history.back()">voltar</a>
       <div class="login-itens">
-        <img src="../../../public/icons/xipindo11.png" alt="logo" />
-        <h1>cadastro de usuário</h1>
+        <img src="../public/icons/xipindo11.png" alt="logo" />
+        <h1>Cadastro de Admin</h1>
         <form action="../home/index.php" class="login-form">
           <div class="form-itens">
             <input type="text" id="nome" name="nome" placeholder="seu nome" />
@@ -34,38 +34,6 @@
             <input type="email" id="email" name="email" placeholder="E-mail" />
           </div>
 
-          <div class="form-itens">
-            <label for="data">data de nascimento</label>
-            <input
-              type="date"
-              id="data"
-              name="data"
-              placeholder="data de nascimento"
-            />
-          </div>
-
-          <div class="form-itens grid radio">
-            <h1>gênero</h1>
-            <div>
-              <input type="radio" id="masculino" name="genero" />
-              <label for="masculino">masculino </label>
-            </div>
-
-            <div>
-              <input type="radio" id="femenino" name="genero" />
-              <label for="femenino">femenino </label>
-            </div>
-          </div>
-
-          <div class="form-itens">
-            <label for="endereco">endereço</label>
-            <input
-              type="text"
-              id="endereco"
-              name="endereco"
-              placeholder="provincia, município, bairro e rua"
-            />
-          </div>
 
           <div class="form-itens">
             <label for="endereco">senha</label>
@@ -81,7 +49,6 @@
             <button id="button" name="button" class="botao">cadastrar</button>
           </div>
         </form>
-        <a href="">já tenho uma conta</a>
       </div>
     </main>
   </body>

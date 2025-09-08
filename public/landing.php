@@ -10,7 +10,6 @@
       href="icons/xipindo11.png"
       type="image/x-icon"
     />
-    <script src="js/anamnese.js" defer></script>
     <script src="js/landing.js"></script>
     <script src="js/sweetalert2.min.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,23 +23,23 @@
           <a href="#body"><img src="icons/xipindo11.png" alt="logo" class="logo-X" /></a>
           <nav>
             <ul class="header-menu">
-              <li><a href="#servicos">serviços</a></li>
-              <li><a href="#departamentos">departamentos</a></li>
-              <li><a href="#doctores">doctores</a></li>
-              <li><a href="#contacto">contactos</a></li>
-              <li><a  href="../app/views/auth/login.php"class="login">login</a></li>
+              <li><a href="#servicos">Serviços</a></li>
+              <li><a href="#departamentos">Departamentos</a></li>
+              <li><a href="#doctores">Doctores</a></li>
+              <li><a href="#contacto">Contactos</a></li>
+              <li><a  href="../app/views/auth/login.php"class="login">Login</a></li>
             </ul>
           </nav>
         </div>
       </header>
 
       <main class="main box-min">
-        <h1>Nos cuidamos de você e sua saúde</h1>
+        <h1>Nós cuidamos de você e sua saúde</h1>
         <p>
           Oferecemos serviços especializados com os melhores profissionais em
           diversas áreas de saúde.
         </p>
-        <button class="botao" id="consulta">marcar consulta</button>
+        <button style="color: var(--c-p4);" class="botao" id="consulta">marcar consulta</button>
       </main>
     </div>
 
@@ -131,9 +130,9 @@
 
     <section id="departamentos" class="box-max">
       <h1>
-        Nossos Departamento
+        Nossos Departamentos
         <p>
-          especialidade médica com atendimento personalizado para cuidar de você
+          Especialidade médica com atendimento personalizado para cuidar de você
           e sua família.
         </p>
       </h1>
@@ -321,7 +320,6 @@
           <h2>número de telefonr</h2>
           <p><a href="tell:+244-999-999-999">+244-999-999-999</a></p>          
           <p><a href="tell:+244-999-999-999">+244-999-999-999</a></p>
-          <strong>(ligação gratuita)</strong>
         </li> 
 
         <li>
@@ -333,7 +331,7 @@
 
       <div class="contacto-cont">
         <div class="contacto-text">
-          <h1>Entre em Contacto Connosco <p>Estamos aqui para ajudar! Tire suas dúvidas ou agende uma consulta de forma rápida e fácil.</p></h1>
+          <h1>Entre em Contacto Connosco <p>Estamos aqui para ajudar! Tire suas dúvidas ou agende uma consulta de forma rápida e fácil - <a style="text-decoration: underline;" href="#header">Aqui!</a></p></h1>
           <span>Não hesite em entrar em contacto! Estamos prontos para atendê-lo.</span>
         </div>
 
@@ -357,7 +355,10 @@
       </div>
     </article>
 
-<?php include __DIR__ . '/../app/views/partials/footer.php'; ?>
+  <footer>
+    <p>&copy; <?php echo date("Y"); ?> <span>Xipito na net</span> | Todos os direitos reservados.</p>
+    <img src="icons/xipindo11.png" alt="">
+  </footer>
 
 
     <section id="consulta-marcar">
