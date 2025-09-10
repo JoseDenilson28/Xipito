@@ -69,7 +69,7 @@
             id="openOpiniao"
             onclick="adicionarClasse('openOpiniao','showOpiniao')"
           >
-            2º Opinião
+            2º Opinião Médica
           </li>
         </ul>
       </div>
@@ -88,7 +88,6 @@
             <li>agendamento rápidos</li>
             <li>atendimento personalizado</li>
             <li>ideal para acompanhamento médico regular.</li>
-            <a href="" class="botao-s">marcar consulta</a>
           </ul>
         </li>
 
