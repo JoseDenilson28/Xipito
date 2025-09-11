@@ -28,8 +28,8 @@
           src="../../../public/icons/xipindo11.png"
           alt="logo"
         />
-        <h1>login do Admin</h1>
-        <form action="../home/index.php" class="login-form">
+        <h1>login Douctor</h1>
+        <form action="../home/home.php" class="login-form">
           <div class="form-itens">
             <label for="nome">
               <svg
@@ -88,7 +88,7 @@
             <button id="button" name="button" class="botao">login</button>
           </div>
         </form>
-        <a href="">Esquece minha senha</a>
+        <a href="forget.php">Esquece minha senha</a>
       </div>
     </main>
   </body>

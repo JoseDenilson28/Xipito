@@ -12,7 +12,7 @@
 }
 #servicos h1 p {
   text-align: center;
-  color: var(--c-p3);
+  color: var(--c-p1);
   font: 500 1rem/1 "arial";
   margin-top: 10px;
 }
@@ -114,7 +114,7 @@
 
 .servico-menu li {
   font: 500 1.1rem/1.4 "arial";
-  color: var(--c-p2);
+  color: var(--c-p1);
   display: flex;
   align-items: center;
   gap: 10px;

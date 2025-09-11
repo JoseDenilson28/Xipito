@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../../public/css/admin/style.css" />
+    <link rel="stylesheet" href="../public/css/admin/style.css" />
     <link
       rel="stylesheet"
-      href="../../../public/css/global/header-home.css"
+      href="../public/css/global/header-home.css"
     />
     <link
       rel="stylesheet"
-      href="../../../public/css/global/header-home.css"
+      href="../public/css/global/header-home.css"
     />
     <link
       rel="shortcut icon"
-      href="../../../public/icons/xipindo11.png"
+      href="../public/icons/xipindo11.png"
       type="image/x-icon"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -26,7 +26,7 @@
       <picture>
         <img
           class="logo-X"
-          src="../../../public/icons/xipindo11.png"
+          src="../public/icons/xipindo11.png"
           alt="logo"
           class="logo-X"
         />
@@ -38,10 +38,10 @@
             <a href="">dashboard</a>
           </li>
           <li>
-            <a href="./cadastroAdmin.php">cadastros</a>
+            <a href="cadastroAdmin.php">Cadastro Admin</a>
           </li>
           <li>
-            <a href="">dashboard</a>
+            <a href="cadastroDouctor.php">Cadastro Douctor</a>
           </li>
         </ul>
       </nav>
@@ -69,7 +69,7 @@
           </li>
 
           <li>
-            <img src="../../../public/img/dash (1).jpg" alt="perfil" />
+            <img src="../public/img/dash (1).jpg" alt="perfil" />
           </li>
         </ul>
 

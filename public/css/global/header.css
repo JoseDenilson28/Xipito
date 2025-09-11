@@ -27,7 +27,7 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 5px;
-  color: var(--c-p3);
+  color: var(--c-p4);
 }
 
 .header-menu a {
