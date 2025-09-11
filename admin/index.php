@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../../public/css/style.css" />
+    <link rel="stylesheet" href="../public/css/style.css" />
     <link
       rel="shortcut icon"
-      href="../../../public/icons/xipindo11.png"
+      href="../public/icons/xipindo11.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="../../../public/css/views/auth.css" />
+    <link rel="stylesheet" href="../public/css/views/auth.css" />
     <title>login</title>
   </head>
 
@@ -25,11 +25,11 @@
             left: 10px;
             position: absolute;
           "
-          src="../../../public/icons/xipindo11.png"
+          src="../public/icons/xipindo11.png"
           alt="logo"
         />
         <h1>login do Admin</h1>
-        <form action="../home/index.php" class="login-form">
+        <form action="dash.php" class="login-form">
           <div class="form-itens">
             <label for="nome">
               <svg

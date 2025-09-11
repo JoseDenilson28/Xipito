@@ -10,7 +10,7 @@
 }
 
 .login-itens {
-  border: solid 5px var(--c-p3);
+  border: solid 5px var(--c-p2);
   padding: 30px;
   max-width: 750px;
   max-height: 70%;
@@ -82,21 +82,21 @@
 .form-itens input {
   padding: 15px;
   border: none;
-  border: 3px solid var(--c-p3);
+  border: 3px solid var(--c-p2);
   font-size: 1.1rem;
-  color: var(--c-p1);
+  color: var(--c-p0);
   outline: none;
   backdrop-filter: blur(20px);
 }
 .form-itens input::placeholder {
-  color: var(--c-p1);
+  color: var(--c-p0);
 }
 .form-itens button {
   font: 600 1.2rem/1 "arial";
 }
 
 .form-itens label {
-  border: 3px solid var(--c-p3);
+  border: 3px solid var(--c-p2);
   color: var(--c-p2);
   padding: 10px;
   cursor: pointer;
@@ -154,7 +154,7 @@
 .login-itens a {
   font: 600 1.2rem/1 "arial";
   transition: 0.3s;
-  color: var(--c-p2);
+  color: var(--c-p1);
 }
 .login-itens a:hover {
   color: var(--c-p3);

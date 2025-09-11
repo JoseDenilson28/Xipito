@@ -1,7 +1,7 @@
 <!-- Header -->
 <header id="header">
       <div class="header-bg box-max">
-        <a href="./index.php"
+        <a href="home.php"
           ><img
             src="../../../public/icons/xipindo11.png"
             alt="logo"
