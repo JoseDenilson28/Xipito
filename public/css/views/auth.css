@@ -88,6 +88,18 @@
   outline: none;
   backdrop-filter: blur(20px);
 }
+
+.form-itens select {
+  padding: 15px;
+  border: none;
+  border: 3px solid var(--c-p2);
+  font-size: 1.1rem;
+  color: var(--c-p0);
+  outline: none;
+  backdrop-filter: blur(20px);
+  border-radius: 5px;
+}
+
 .form-itens input::placeholder {
   color: var(--c-p0);
 }

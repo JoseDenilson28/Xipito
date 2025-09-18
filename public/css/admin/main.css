@@ -14,12 +14,11 @@
   justify-content: space-between;
   gap: 10px;
   padding: 10px 0;
-  margin-bottom: 60px;
 }
 
 .header-second form {
   background-color: var(--c-p4);
-  width: 90%;
+  width: 100%;
 }
 .header-second form input {
   width: 100%;
@@ -99,8 +98,8 @@
 /*-------------------------------*/
 
 .tabela-dash {
-  margin-top: 50px;
-  margin-bottom: 10px;
+  margin-top: 30px;
+  margin-bottom: 20px;
   width: 100%;
   border-collapse: collapse;
   flex: 1;
