@@ -72,4 +72,59 @@ document.addEventListener("DOMContentLoaded", function () {
       );
     }, 7000);
   }
+   // Radios + detalhes cirurgia
+  const radioSim = document.getElementById("cirurgia-sim");
+  const radioNao = document.getElementById("cirurgia-nao");
+  const detalhes = document.getElementById("detalhes-cirurgia");
+
+  if (radioSim && radioNao && detalhes) {
+    function toggleRequired() {
+      if (radioSim.checked) {
+        detalhes.setAttribute("required", "required");
+      } else {
+        detalhes.removeAttribute("required");
+      }
+    }
+
+    radioSim.addEventListener("change", toggleRequired);
+    radioNao.addEventListener("change", toggleRequired);
+  } else {
+    console.warn("Radios ou campo de detalhes não encontrados");
+  }
+
+  // Formulário de Anamnese - Navegação entre etapas
+   const sections = document.querySelectorAll(".dados-consulta");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
+  const submitBtn = document.getElementById("submitBtn");
+  let currentStep = 0;
+
+  function showStep(index) {
+    sections.forEach((section, i) => {
+      section.classList.toggle("active", i === index);
+    });
+
+    // Mostrar/esconder botões
+    prevBtn.style.display = index === 0 ? "none" : "inline-block";
+    nextBtn.style.display = index === sections.length - 1 ? "none" : "inline-block";
+    submitBtn.style.display = index === sections.length - 1 ? "inline-block" : "none";
+  }
+
+  prevBtn.addEventListener("click", () => {
+    if (currentStep > 0) {
+      currentStep--;
+      showStep(currentStep);
+    }
+  });
+
+  nextBtn.addEventListener("click", () => {
+    if (currentStep < sections.length - 1) {
+      currentStep++;
+      showStep(currentStep);
+    }
+  });
+
+  // Iniciar no primeiro passo
+  showStep(currentStep);
 });
+

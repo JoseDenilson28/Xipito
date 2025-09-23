@@ -1,0 +1,17 @@
+# Xipito/.htaccess
+Options -Indexes
+RewriteEngine On
+
+# Ajusta para o subdiretório do projeto (muda se teu projeto estiver em outra pasta)
+RewriteBase /Xipito/
+
+# Bloqueia acesso HTTP direto à pasta app (e subpastas) — retorna 403
+RewriteRule ^app(/|$) - [F,L]
+
+# Se for um ficheiro ou diretório real (css, js, img, public/*), serve normalmente
+RewriteCond %{REQUEST_FILENAME} -f [OR]
+RewriteCond %{REQUEST_FILENAME} -d
+RewriteRule ^ - [L]
+
+# Caso contrário, encaminha tudo para o front controller index.php
+RewriteRule ^ index.php [L,QSA]

@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../../../public/css/style.css" />
+    <link rel="stylesheet" href="<?= BASE_URL ?>public/css/style.css" />
     <link
       rel="shortcut icon"
-      href="../../../public/icons/xipindo11.png"
+      href="<?= BASE_URL ?>public/icons/xipindo11.png"
       type="image/x-icon"
     />
-    <link rel="stylesheet" href="../../../public/css/views/auth.css" />
+    <link rel="stylesheet" href="<?= BASE_URL ?>public/css/views/auth.css" />
     <title>Recuperar senha</title>
   </head>
 
@@ -17,7 +17,7 @@
     <main class="login-cont">
       <a class="voltar-index" href="javascript:history.back()">voltar</a>
       <div class="login-itens">
-        <img src="../../../public/icons/xipindo11.png" alt="logo" />
+        <img src="<?= BASE_URL ?>public/icons/xipindo11.png" alt="logo" />
         <h1>Recuperar senha</h1>
         <form action="reset_password.php" class="login-form">
           <div class="form-itens">

@@ -191,3 +191,19 @@
   font: 400 1rem/1.3 "arial";
   color: var(--c-f);
 }
+.dados-consulta {
+  display: none;
+}
+.dados-consulta.active {
+  display: block;
+}
+.form-navigation {
+  margin-top: 20px;
+  text-align: center;
+}
+#prevBtn {
+  display: none; /* escondido no 1º passo */
+}
+#submitBtn {
+  display: none; /* só aparece no último passo */
+}

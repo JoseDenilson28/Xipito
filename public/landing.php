@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/global/header.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>public/css/style.css">
+    <link rel="stylesheet" href="<?= BASE_URL ?>public/css/global/header.css">
     <link
       rel="shortcut icon"
-      href="icons/xipindo11.png"
+      href="<?= BASE_URL ?>public/icons/xipindo11.png"
       type="image/x-icon"
     />
-    <script src="js/landing.js"></script>
-    <script src="js/sweetalert2.min.js" defer></script>
+    <script src="<?= BASE_URL ?>public/js/landing.js"></script>
+    <script src="<?= BASE_URL ?>public/js/sweetalert2.min.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Xipito</title>
   </head>
@@ -20,14 +20,14 @@
     <div class="back-bg">
       <header id="header">
         <div class="header-bg box-max">
-          <a href="#body"><img src="icons/xipindo11.png" alt="logo" class="logo-X" /></a>
+          <a href="#body"><img src="<?= BASE_URL ?>public/icons/xipindo11.png" alt="logo" class="logo-X" /></a>
           <nav>
             <ul class="header-menu">
               <li><a href="#servicos">Serviços</a></li>
               <li><a href="#departamentos">Departamentos</a></li>
               <li><a href="#doctores">Doctores</a></li>
               <li><a href="#contacto">Contactos</a></li>
-              <li><a  href="../app/views/auth/login.php"class="login">Login</a></li>
+              <li><a href="<?= BASE_URL ?>login" class="login">Login</a></li>
             </ul>
           </nav>
         </div>
@@ -212,7 +212,7 @@
             <li class="doctore-li">
               <div class="doctoreId">
                 <div class="fornt">
-                  <picture><img src="img/perfil (2).jpg" alt="" /></picture>
+                  <picture><img src="<?= BASE_URL ?>public/img/perfil (2).jpg" alt="" /></picture>
                   <h2>
                     Dr. Ricardo Monteiro
                     <span>Cardiologia</span>
@@ -221,7 +221,7 @@
 
                 <div class="doctore-perfil back">
                   <picture>
-                    <img src="img/perfil (2).jpg" alt="" />
+                    <img src="<?= BASE_URL ?>public/img/perfil (2).jpg" alt="" />
                     <h2>
                       Dr. Ricardo Monteiro
                       <span>cardiologista</span>
@@ -241,7 +241,7 @@
             <li class="doctore-li">
               <div class="doctoreId">
                 <div class="fornt">
-                  <picture><img src="img/perfil (1).jpg" alt="" /></picture>
+                  <picture><img src="<?= BASE_URL ?>public/img/perfil (1).jpg" alt="" /></picture>
                   <h2>
                     Dra. Camila Pereira
                     <span>Clínica Geral</span>
@@ -250,7 +250,7 @@
 
                 <div class="doctore-perfil back">
                   <picture>
-                    <img src="img/perfil (1).jpg" alt="" />
+                    <img src="<?= BASE_URL ?>public/img/perfil (1).jpg" alt="" />
                     <h2>
                       Dra. Camila Pereira
                       <span>cardiologista</span>
@@ -270,7 +270,7 @@
             <li class="doctore-li">
               <div class="doctoreId">
                 <div class="fornt">
-                  <picture><img src="img/perfil (1).jpg" alt="" /></picture>
+                  <picture><img src="<?= BASE_URL ?>public/img/perfil (1).jpg" alt="" /></picture>
                   <h2>
                     Dra. Mariana Oliveira
                     <span>Pediatria</span>
@@ -279,7 +279,7 @@
 
                 <div class="doctore-perfil back">
                   <picture>
-                    <img src="img/perfil (1).jpg" alt="" />
+                    <img src="<?= BASE_URL ?>public/img/perfil (1).jpg" alt="" />
                     <h2>
                       Dra. Mariana Oliveira
                       <span>Pediatria</span>
@@ -356,7 +356,7 @@
 
   <footer>
     <p>&copy; <?php echo date("Y"); ?> <span>Xipito na net</span> | Todos os direitos reservados.</p>
-    <img src="icons/xipindo11.png" alt="">
+    <img src="<?= BASE_URL ?>public/icons/xipindo11.png" alt="">
   </footer>
 
 
@@ -375,6 +375,11 @@
             <div class="form-consulta">
               <label for="data-nascimento">Data de Nascimento:</label>
               <input type="date" id="data-nascimento" name="data-nascimento" required>
+            </div>
+
+            <div class="form-consulta">
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" placeholder="exemplo@gmail.com" required>
             </div>
 
             <div class="form-consulta">
@@ -422,13 +427,11 @@
             <h2>Histórico Médico</h2>
             <div class="form-consulta">
               <label for="Possuidoenca">Possui alguma doença crónica?</label>
-              <select id="Possuidoenca">
-              <option value="diabetes">não</option>                  
-              <option value="diabetes">diabetes</option>                  
-              <option value="hipertensao">hipertensao</option>                  
-              <option value="asma">asma</option>                  
-              <option value="Outras">Outras</option>
-              </select>
+              <label><input type="checkbox" name="doencas[]" value="diabetes"> Diabetes</label>
+              <label><input type="checkbox" name="doencas[]" value="hipertensao"> Hipertensão</label>
+              <label><input type="checkbox" name="doencas[]" value="asma"> Asma</label>
+              <label><input type="checkbox" name="doencas[]" value="outras"> Outras</label>
+              <label><input type="checkbox" name="doencas[]" value="nenhuma"> Nenhuma</label>
             </div>           
           </div>
           
@@ -445,6 +448,24 @@
             <textarea id="detalhes-cirurgia" name="detalhes-cirurgia" rows="3" placeholder="Descreva suas cirurgias (se houver)."></textarea></div>
           </div> 
 
+          <div class="dados-consulta quarto">
+            <h2>Dados Complementares</h2>
+            <div class="form-consulta">
+              <label for="alergias">Alergias:</label>
+              <textarea id="alergias" name="alergias" rows="3" placeholder="Informe se tem alguma alergia"></textarea>
+            </div>
+
+            <div class="form-consulta">
+              <label for="medicamentos">Medicamentos em uso:</label>
+              <textarea id="medicamentos" name="medicamentos" placeholder="Informe os medicamentos que usa atualmente"></textarea>
+            </div>
+
+            <div class="form-consulta">
+              <label for="historico-familiar">Histórico familiar:</label>
+              <textarea id="historico-familiar" name="historico_familiar" placeholder="Doenças hereditárias na família"></textarea>
+            </div>
+          </div>
+
           <div class="dados-consulta ultimo">
             <h2>Termo de Consentimento</h2>
             <label>
@@ -453,7 +474,11 @@
             </label>
           </div>
 
-          <button type="submit" class="botao">Enviar Anamnese</button>
+          <div class="form-navigation">
+            <button type="button" id="prevBtn" class="botao">Anterior</button>
+            <button type="button" id="nextBtn" class="botao">Próximo</button>
+            <button type="submit" id="submitBtn" class="botao">Enviar Anamnese</button>
+          </div>
         </form>
       </div>
     </section>
